@@ -10,268 +10,464 @@
 
     <meta
       name="description"
-      content="E&K Wellness offers personalized wellness support, movement, recovery, strength training, and handmade wellness products."
+      content="E&K Wellness offers personalized movement, balance, strength, recovery, and wellness support."
     />
 
-    <title>E&K Wellness</title>
+    <title>E&amp;K Wellness</title>
 
-    <link rel="stylesheet" href="styles.css" />
-
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <!-- =========================
-         HEADER / NAVIGATION
+         HEADER
     ========================== -->
 
     <header class="site-header">
       <div class="header-container">
         <a href="#home" class="logo">
-          <span class="logo-main">E&amp;K</span>
-          <span class="logo-small">WELLNESS</span>
+          <span class="logo-main">E&amp;K Wellness</span>
+
+          <span class="logo-small">
+            MOVE • RECOVER • THRIVE
+          </span>
         </a>
 
         <nav class="main-nav" aria-label="Main navigation">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#recovery">Recovery</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#home" aria-current="page">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="#about">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="recovery.html">
+                Recovery
+              </a>
+            </li>
+
+            <li>
+              <a href="#blog">
+                Blog
+              </a>
+            </li>
+
+            <li>
+              <a href="#shop">
+                Shop
+              </a>
+            </li>
+
+            <li>
+              <a href="#contact">
+                Contact
+              </a>
+            </li>
           </ul>
         </nav>
 
-        <a href="#contact" class="header-button">Book a Session</a>
+        <a href="services.html" class="header-button">
+          Book a Session
+        </a>
       </div>
     </header>
 
     <main>
-     <section class="hero-section" id="home">
-  <div class="hero-content">
-    <p class="hero-kicker">WELCOME TO</p>
-    <h1>E&amp;K Wellness</h1>
-    <p class="hero-text">
-      Supporting your journey toward better movement, strength, balance,
-      recovery, and overall well-being.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#services" class="button primary-button">Explore Services</a>
-      <a href="#contact" class="button secondary-button">Contact Us</a>
-    </div>
-  </div>
-
-  <div class="wave-wrapper">
-    <svg
-      class="waves"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 24 150 28"
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <path
-          id="gentle-wave"
-          d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"
-        ></path>
-      </defs>
-
-      <g class="parallax">
-        <use href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.18)"></use>
-        <use href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.14)"></use>
-        <use href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.10)"></use>
-        <use href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.24)"></use>
-      </g>
-    </svg>
-  </div>
-</section>
       <!-- =========================
-           ABOUT SECTION
+           HOME HERO
       ========================== -->
 
-      <section id="about" class="section about-section">
-        <div class="section-container two-column">
-          <div class="image-column">
+      <section class="hero-section" id="home">
+        <div class="hero-content">
+          <p class="hero-kicker">
+            WELCOME TO
+          </p>
+
+          <h1>
+            E&amp;K Wellness
+          </h1>
+
+          <p class="hero-text">
+            Supporting your journey toward better movement,
+            strength, balance, recovery, and overall well-being.
+          </p>
+
+          <div class="hero-buttons">
+            <a
+              href="services.html"
+              class="button primary-button"
+            >
+              Explore Services
+            </a>
+
+            <a
+              href="#contact"
+              class="button secondary-button"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+
+        <!-- Animated waves -->
+
+        <div class="wave-wrapper">
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"
+              ></path>
+            </defs>
+
+            <g class="parallax">
+              <use
+                href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,255,255,0.18)"
+              ></use>
+
+              <use
+                href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.14)"
+              ></use>
+
+              <use
+                href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.10)"
+              ></use>
+
+              <use
+                href="#gentle-wave"
+                x="48"
+                y="7"
+                fill="rgba(255,255,255,0.24)"
+              ></use>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <!-- =========================
+           ABOUT
+      ========================== -->
+
+      <section
+        class="section about-section"
+        id="about"
+      >
+        <div class="about-container">
+          <div class="about-image">
             <img
               src="peaceful_outdoor.jpg"
               alt="A peaceful outdoor wellness setting"
             />
           </div>
 
-          <div class="text-column">
-            <p class="section-label">ABOUT E&amp;K WELLNESS</p>
+          <div class="about-content">
+            <p class="about-label">
+              ABOUT E&amp;K WELLNESS
+            </p>
 
-            <h2>A Personalized Approach to Wellness</h2>
+            <h2>
+              A Personalized Approach to Wellness
+            </h2>
 
             <p>
-              E&amp;K Wellness supports people who want to improve their
-              movement, flexibility, balance, strength, and daily quality of
-              life.
+              E&amp;K Wellness supports people who want to
+              improve their movement, flexibility, balance,
+              strength, and daily quality of life.
             </p>
 
             <p>
-              Our goal is to create a comfortable and encouraging environment
-              where each person can work at their own pace.
+              Our goal is to create a comfortable and encouraging
+              environment where each person can work at their
+              own pace.
             </p>
 
             <p>
-              Wellness is not only about exercise. It also includes recovery,
-              stress management, healthy routines, confidence, and learning
-              how to care for your body.
+              Wellness is not only about exercise. It also
+              includes recovery, stress management, healthy
+              routines, confidence, and learning how to care
+              for your body.
             </p>
 
-            <a href="#services" class="text-link">View Our Services →</a>
+            <a
+              href="services.html"
+              class="about-button"
+            >
+              View Our Services
+            </a>
           </div>
         </div>
       </section>
 
       <!-- =========================
-           SERVICES SECTION
+           HOME SERVICES
       ========================== -->
 
-      <section id="services" class="section services-section">
+      <section
+        class="section services-section"
+        id="services"
+      >
         <div class="section-container">
           <div class="section-heading">
-            <p class="section-label">WHAT WE OFFER</p>
+            <p class="section-label">
+              WHAT WE OFFER
+            </p>
 
-            <h2>Wellness Services</h2>
+            <h2>
+              Wellness Services
+            </h2>
 
             <p>
-              Our services are designed to support your personal wellness
-              goals through safe, practical, and individualized guidance.
+              Our services support your personal wellness goals
+              through safe, practical, and individualized guidance.
             </p>
           </div>
 
           <div class="card-grid">
-            <article class="service-card">
+            <!-- Movement -->
+
+            <a
+              href="services.html#movement-mobility"
+              class="service-card service-link-card"
+            >
               <img
                 src="gentle_movement.jpg"
                 alt="Person practicing gentle movement"
               />
 
               <div class="card-content">
-                <h3>Movement</h3>
+                <h3>
+                  Movement &amp; Mobility
+                </h3>
 
                 <p>
-                  Improve mobility and flexibility through comfortable,
-                  guided movement.
+                  Improve mobility and flexibility through
+                  comfortable and guided movement.
                 </p>
-              </div>
-            </article>
 
-            <article class="service-card">
+                <span class="service-card-link">
+                  View &amp; Schedule →
+                </span>
+              </div>
+            </a>
+
+            <!-- Strength -->
+
+            <a
+              href="services.html#strength-stability"
+              class="service-card service-link-card"
+            >
               <img
                 src="Strength_training.jpg"
                 alt="Person doing strength training"
               />
 
               <div class="card-content">
-                <h3>Strength</h3>
+                <h3>
+                  Strength &amp; Stability
+                </h3>
 
                 <p>
-                  Build practical strength to support everyday activities,
-                  stability, and confidence.
+                  Build practical strength to support everyday
+                  activities, stability, and confidence.
                 </p>
-              </div>
-            </article>
 
-            <article class="service-card">
+                <span class="service-card-link">
+                  View &amp; Schedule →
+                </span>
+              </div>
+            </a>
+
+            <!-- Balance -->
+
+            <a
+              href="services.html#balance-coordination"
+              class="service-card service-link-card"
+            >
               <img
                 src="balance_exercise.jpg"
                 alt="Person practicing balance exercises"
               />
 
               <div class="card-content">
-                <h3>Balance</h3>
+                <h3>
+                  Balance &amp; Coordination
+                </h3>
 
                 <p>
-                  Practice coordination and stability exercises designed for
-                  your current ability.
+                  Practice coordination and stability exercises
+                  designed for your current ability.
                 </p>
+
+                <span class="service-card-link">
+                  View &amp; Schedule →
+                </span>
               </div>
-            </article>
+            </a>
 
-            <article class="service-card text-service-card">
-              <div class="service-icon">01</div>
+            <!-- Stress relief -->
 
-              <h3>Stress Relief</h3>
+            <a
+              href="services.html#stress-relief"
+              class="service-card text-service-card service-link-card"
+            >
+              <div class="service-icon">
+                01
+              </div>
 
-              <p>
-                Learn calming techniques that can support relaxation and
-                emotional wellness.
-              </p>
-            </article>
-
-            <article class="service-card text-service-card">
-              <div class="service-icon">02</div>
-
-              <h3>Personal Sessions</h3>
+              <h3>
+                Stress Relief
+              </h3>
 
               <p>
-                Receive personal guidance based on your needs, abilities, and
-                wellness goals.
+                Learn calming movement and breathing techniques
+                that support relaxation.
               </p>
-            </article>
 
-            <article class="service-card text-service-card">
-              <div class="service-icon">03</div>
+              <span class="service-card-link">
+                View &amp; Schedule →
+              </span>
+            </a>
 
-              <h3>Online Sessions</h3>
+            <!-- Real QuiGon -->
+
+            <a
+              href="services.html#real-quigon"
+              class="service-card text-service-card service-link-card"
+            >
+              <div class="service-icon">
+                02
+              </div>
+
+              <h3>
+                Real QuiGon
+              </h3>
 
               <p>
-                Participate in wellness sessions from home through an online
-                meeting.
+                Explore slow movement, breathing, balance,
+                animal-style movement, and mental relaxation.
               </p>
-            </article>
+
+              <span class="service-card-link">
+                View &amp; Schedule →
+              </span>
+            </a>
+
+            <!-- Senior Parkour -->
+
+            <a
+              href="services.html#senior-parkour"
+              class="service-card text-service-card service-link-card"
+            >
+              <div class="service-icon">
+                03
+              </div>
+
+              <h3>
+                Senior Parkour
+              </h3>
+
+              <p>
+                Practice safer everyday movement, reaction,
+                agility, balance, and fall prevention.
+              </p>
+
+              <span class="service-card-link">
+                View &amp; Schedule →
+              </span>
+            </a>
           </div>
         </div>
       </section>
 
       <!-- =========================
-           RECOVERY SECTION
+           RECOVERY
       ========================== -->
 
-      <section id="recovery" class="section recovery-section">
+      <section
+        class="section recovery-section"
+        id="recovery"
+      >
         <div class="section-container two-column reverse-column">
           <div class="text-column">
-            <p class="section-label">MY RECOVERY</p>
+            <p class="section-label">
+              MY RECOVERY
+            </p>
 
-            <h2>Recovery Is Part of the Journey</h2>
+            <h2>
+              Recovery Is Part of the Journey
+            </h2>
 
             <p>
-              Recovery can be a physical and emotional process. It often
-              requires patience, consistency, support, and a willingness to
-              take one step at a time.
+              Recovery can be both a physical and emotional
+              process. It often requires patience, consistency,
+              support, and a willingness to take one step at a time.
             </p>
 
             <p>
-              Through personal experience, E&amp;K Wellness understands that
-              progress does not always happen in a straight line.
+              Through personal experience, E&amp;K Wellness
+              understands that progress does not always happen
+              in a straight line.
             </p>
 
             <p>
-              This recovery story is shared to encourage others who may be
-              facing physical limitations, pain, rehabilitation, or major life
-              changes.
+              This recovery story is shared to encourage others
+              who may be facing pain, rehabilitation, physical
+              limitations, or major life changes.
             </p>
 
-            <a href="#blog" class="button dark-button">
+            <a
+              href="recovery.html"
+              class="button recovery-button"
+            >
               Read Recovery Stories
             </a>
           </div>
 
           <div class="image-column">
             <img
-              src="images/recovery.jpg"
+              src="recovery.jpg"
               alt="A peaceful path representing recovery"
             />
           </div>
@@ -279,149 +475,217 @@
       </section>
 
       <!-- =========================
-           BLOG SECTION
+           BLOG
       ========================== -->
 
-      <section id="blog" class="section blog-section">
+      <section
+        class="section blog-section"
+        id="blog"
+      >
         <div class="section-container">
           <div class="section-heading">
-            <p class="section-label">WELLNESS JOURNAL</p>
+            <p class="section-label">
+              WELLNESS JOURNAL
+            </p>
 
-            <h2>Latest Blog Posts</h2>
+            <h2>
+              Latest Blog Posts
+            </h2>
 
             <p>
-              Practical thoughts about wellness, recovery, movement, healthy
-              habits, and personal growth.
+              Practical thoughts about wellness, movement,
+              recovery, healthy habits, and personal growth.
             </p>
           </div>
 
           <div class="blog-grid">
             <article class="blog-card">
-              <p class="blog-date">Wellness</p>
-
-              <h3>Small Daily Habits Can Create Meaningful Change</h3>
-
-              <p>
-                Simple and consistent actions can help support your long-term
-                health and wellness goals.
+              <p class="blog-date">
+                Wellness
               </p>
 
-              <a href="#" class="text-link">Read More →</a>
+              <h3>
+                Small Daily Habits Can Create Meaningful Change
+              </h3>
+
+              <p>
+                Simple and consistent actions can support your
+                long-term health and wellness goals.
+              </p>
+
+              <a href="#" class="text-link">
+                Read More →
+              </a>
             </article>
 
             <article class="blog-card">
-              <p class="blog-date">Recovery</p>
-
-              <h3>Learning to Be Patient During Recovery</h3>
-
-              <p>
-                Recovery may take time, but each small improvement is part of
-                your progress.
+              <p class="blog-date">
+                Recovery
               </p>
 
-              <a href="#" class="text-link">Read More →</a>
+              <h3>
+                Learning to Be Patient During Recovery
+              </h3>
+
+              <p>
+                Recovery may take time, but every small improvement
+                is part of your progress.
+              </p>
+
+              <a
+                href="recovery.html"
+                class="text-link"
+              >
+                Read More →
+              </a>
             </article>
 
             <article class="blog-card">
-              <p class="blog-date">Movement</p>
-
-              <h3>Why Gentle Movement Is Still Valuable</h3>
-
-              <p>
-                Exercise does not always need to be intense to provide
-                physical and emotional benefits.
+              <p class="blog-date">
+                Movement
               </p>
 
-              <a href="#" class="text-link">Read More →</a>
+              <h3>
+                Why Gentle Movement Is Still Valuable
+              </h3>
+
+              <p>
+                Exercise does not always need to be intense to
+                provide physical and emotional benefits.
+              </p>
+
+              <a href="#" class="text-link">
+                Read More →
+              </a>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- =========================
-           SHOP SECTION
-      ========================== -->
+     <!-- =========================
+     SHOP
+========================== -->
 
-      <section id="shop" class="section shop-section">
-        <div class="section-container">
-          <div class="section-heading">
-            <p class="section-label">HANDMADE PRODUCTS</p>
+<section
+  class="section shop-section"
+  id="shop"
+>
+  <div class="section-container">
+    <div class="section-heading">
+      <p class="section-label">
+        HANDMADE PRODUCTS
+      </p>
 
-            <h2>Wellness Shop</h2>
+      <h2>
+        Wellness Shop
+      </h2>
 
-            <p>
-              Discover handmade products created to add comfort and care to
-              your wellness routine.
-            </p>
-          </div>
+      <p>
+        Discover handmade products created to add comfort
+        and care to your wellness routine.
+      </p>
+    </div>
 
-          <div class="product-grid">
-            <article class="product-card">
-              <img
-                src="soap-1.jpg"
-                alt="Handmade natural soap"
-              />
+    <div class="product-grid">
+      <!-- Product 1 -->
 
-              <div class="product-content">
-                <h3>Natural Handmade Soap</h3>
+      <article class="product-card">
+        <img
+          src="images/soap-1.jpg"
+          alt="Handmade natural soap"
+        />
 
-                <p class="product-price">$8.00</p>
+        <div class="product-content">
+          <h3>
+            Natural Handmade Soap
+          </h3>
 
-                <a href="#" class="button dark-button">View Product</a>
-              </div>
-            </article>
+          <p class="product-price">
+            $8.00
+          </p>
 
-            <article class="product-card">
-              <img
-                src="soap-2.jpg"
-                alt="Handmade lavender soap"
-              />
-
-              <div class="product-content">
-                <h3>Lavender Wellness Soap</h3>
-
-                <p class="product-price">$8.00</p>
-
-                <a href="#" class="button dark-button">View Product</a>
-              </div>
-            </article>
-
-            <article class="product-card">
-              <img
-                src="soap-3.jpg"
-                alt="Handmade botanical soap"
-              />
-
-              <div class="product-content">
-                <h3>Botanical Soap</h3>
-
-                <p class="product-price">$8.00</p>
-
-                <a href="#" class="button dark-button">View Product</a>
-              </div>
-            </article>
-          </div>
+          <a href="#" class="button dark-button">
+            View Product
+          </a>
         </div>
-      </section>
+      </article>
+
+      <!-- Product 2 -->
+
+      <article class="product-card">
+        <img
+          src="images/soap-2.jpg"
+          alt="Handmade lavender soap"
+        />
+
+        <div class="product-content">
+          <h3>
+            Lavender Wellness Soap
+          </h3>
+
+          <p class="product-price">
+            $8.00
+          </p>
+
+          <a href="#" class="button dark-button">
+            View Product
+          </a>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+
+      <article class="product-card">
+        <img
+          src="images/soap-3.jpg"
+          alt="Handmade botanical soap"
+        />
+
+        <div class="product-content">
+          <h3>
+            Botanical Soap
+          </h3>
+
+          <p class="product-price">
+            $8.00
+          </p>
+
+          <a href="#" class="button dark-button">
+            View Product
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
       <!-- =========================
-           CONTACT SECTION
+           CONTACT
       ========================== -->
 
-      <section id="contact" class="section contact-section">
+      <section
+        class="section contact-section"
+        id="contact"
+      >
         <div class="section-container contact-container">
           <div class="contact-information">
-            <p class="section-label">GET IN TOUCH</p>
+            <p class="section-label">
+              GET IN TOUCH
+            </p>
 
-            <h2>Contact E&amp;K Wellness</h2>
+            <h2>
+              Contact E&amp;K Wellness
+            </h2>
 
             <p>
-              Contact us to ask a question, learn more about services, or
-              schedule a wellness session.
+              Contact us to ask a question, learn more about
+              services, or schedule a wellness session.
             </p>
 
             <div class="contact-item">
-              <h3>Email</h3>
+              <h3>
+                Email
+              </h3>
 
               <a href="mailto:eandkwellness2020@gmail.com">
                 eandkwellness2020@gmail.com
@@ -429,21 +693,31 @@
             </div>
 
             <div class="contact-item">
-              <h3>Service Area</h3>
+              <h3>
+                Service Area
+              </h3>
 
-              <p>Long Beach and surrounding areas</p>
+              <p>
+                Long Beach and surrounding areas
+              </p>
             </div>
 
             <div class="contact-item">
-              <h3>Sessions</h3>
+              <h3>
+                Sessions
+              </h3>
 
-              <p>In-person and online sessions are available.</p>
+              <p>
+                In-person and online sessions are available.
+              </p>
             </div>
           </div>
 
           <form class="contact-form">
             <div class="form-group">
-              <label for="name">Name</label>
+              <label for="name">
+                Name
+              </label>
 
               <input
                 type="text"
@@ -455,7 +729,9 @@
             </div>
 
             <div class="form-group">
-              <label for="email">Email</label>
+              <label for="email">
+                Email
+              </label>
 
               <input
                 type="email"
@@ -467,7 +743,9 @@
             </div>
 
             <div class="form-group">
-              <label for="subject">Subject</label>
+              <label for="subject">
+                Subject
+              </label>
 
               <input
                 type="text"
@@ -478,7 +756,9 @@
             </div>
 
             <div class="form-group">
-              <label for="message">Message</label>
+              <label for="message">
+                Message
+              </label>
 
               <textarea
                 id="message"
@@ -489,7 +769,10 @@
               ></textarea>
             </div>
 
-            <button type="submit" class="button primary-button">
+            <button
+              type="submit"
+              class="button primary-button"
+            >
               Send Message
             </button>
           </form>
@@ -504,29 +787,64 @@
     <footer class="site-footer">
       <div class="footer-container">
         <div>
-          <a href="#home" class="footer-logo">E&amp;K Wellness</a>
+          <a href="#home" class="footer-logo">
+            E&amp;K Wellness
+          </a>
 
           <p>
-            Supporting movement, recovery, balance, strength, and everyday
-            wellness.
+            Supporting movement, recovery, balance, strength,
+            and everyday wellness.
           </p>
         </div>
 
         <div>
-          <h2>Quick Links</h2>
+          <h2>
+            Quick Links
+          </h2>
 
           <ul class="footer-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#recovery">Recovery</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#about">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="recovery.html">
+                Recovery
+              </a>
+            </li>
+
+            <li>
+              <a href="#blog">
+                Blog
+              </a>
+            </li>
+
+            <li>
+              <a href="#shop">
+                Shop
+              </a>
+            </li>
+
+            <li>
+              <a href="#contact">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
 
         <div>
-          <h2>Contact</h2>
+          <h2>
+            Contact
+          </h2>
 
           <p>
             <a href="mailto:eandkwellness2020@gmail.com">
@@ -537,7 +855,10 @@
       </div>
 
       <div class="copyright">
-        <p>&copy; 2026 E&amp;K Wellness. All rights reserved.</p>
+        <p>
+          &copy; 2026 E&amp;K Wellness.
+          All rights reserved.
+        </p>
       </div>
     </footer>
   </body>

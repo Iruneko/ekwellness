@@ -10,10 +10,10 @@
 
     <meta
       name="description"
-      content="A personal recovery journey shared by E&K Wellness."
+      content="A personal L4-L5 surgery and recovery journey shared by E&K Wellness."
     />
 
-    <title>Recovery | E&amp;K Wellness</title>
+    <title>Recovery Journey | E&amp;K Wellness</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,6 +31,185 @@
 
     <!-- Shared CSS used by all pages -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Recovery Video Series CSS -->
+    <style>
+      /* =========================================
+         RECOVERY VIDEO SERIES
+      ========================================= */
+
+      .recovery-video-section {
+        padding: 95px 25px;
+
+        background-color: #173a4d;
+      }
+
+      .recovery-video-heading {
+        width: min(760px, 100%);
+        margin: 0 auto 50px;
+
+        text-align: center;
+      }
+
+      .recovery-video-heading .section-label {
+        color: #9fc8d8;
+      }
+
+      .recovery-video-heading h2 {
+        margin-bottom: 20px;
+
+        color: #ffffff;
+      }
+
+      .recovery-video-heading p:last-child {
+        max-width: 680px;
+        margin: 0 auto;
+
+        color: #dce7eb;
+
+        line-height: 1.8;
+      }
+
+      .recovery-video-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+
+        width: min(1050px, 100%);
+        margin: 0 auto;
+      }
+
+      .recovery-video-card {
+        overflow: hidden;
+
+        border-radius: 18px;
+
+        background-color: #ffffff;
+
+        box-shadow:
+          0 15px 35px rgba(0, 0, 0, 0.18);
+      }
+
+      .recovery-video-wrapper {
+        width: 100%;
+
+        aspect-ratio: 16 / 9;
+
+        background-color: #000000;
+      }
+
+      .recovery-video-wrapper iframe {
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        border: 0;
+      }
+
+      .recovery-video-content {
+        padding: 30px;
+      }
+
+      .recovery-episode {
+        margin-bottom: 10px;
+
+        color: #4f89a2;
+
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .recovery-video-content h3 {
+        margin-bottom: 15px;
+
+        color: #173a4d;
+
+        font-family: "Playfair Display", serif;
+        font-size: 1.7rem;
+        line-height: 1.3;
+      }
+
+      .recovery-video-content p {
+        margin-bottom: 0;
+
+        color: #60747d;
+
+        line-height: 1.75;
+      }
+
+      .recovery-video-note {
+        max-width: 850px;
+        margin: 45px auto 0;
+        padding: 24px 28px;
+
+        border-left: 4px solid #7da9bb;
+        border-radius: 0 10px 10px 0;
+
+        background-color: rgba(255, 255, 255, 0.08);
+        color: #dce7eb;
+
+        line-height: 1.75;
+      }
+
+      /* Coming Soon Card */
+
+      .recovery-coming-soon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        min-height: 100%;
+      }
+
+      .recovery-coming-soon-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 280px;
+        padding: 40px;
+
+        background:
+          linear-gradient(
+            135deg,
+            #dfecef,
+            #edf5f7
+          );
+
+        color: #173a4d;
+
+        text-align: center;
+      }
+
+      .recovery-coming-soon-image span {
+        font-family: "Playfair Display", serif;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      /* Mobile */
+
+      @media (max-width: 768px) {
+        .recovery-video-section {
+          padding: 70px 20px;
+        }
+
+        .recovery-video-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .recovery-video-content {
+          padding: 24px;
+        }
+
+        .recovery-video-content h3 {
+          font-size: 1.45rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -40,23 +219,38 @@
 
     <header class="site-header">
       <div class="header-container">
+
         <a href="index.html" class="logo">
-          <span class="logo-main">E&amp;K</span>
-          <span class="logo-small">WELLNESS</span>
+          <span class="logo-main">
+            E&amp;K
+          </span>
+
+          <span class="logo-small">
+            WELLNESS
+          </span>
         </a>
 
-        <nav class="main-nav" aria-label="Main navigation">
+        <nav
+          class="main-nav"
+          aria-label="Main navigation"
+        >
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              <a href="index.html">
+                Home
+              </a>
             </li>
 
             <li>
-              <a href="index.html#about">About</a>
+              <a href="index.html#about">
+                About
+              </a>
             </li>
 
             <li>
-              <a href="services.html">Services</a>
+              <a href="services.html">
+                Services
+              </a>
             </li>
 
             <li>
@@ -69,15 +263,21 @@
             </li>
 
             <li>
-              <a href="index.html#blog">Blog</a>
+              <a href="index.html#blog">
+                Blog
+              </a>
             </li>
 
             <li>
-              <a href="index.html#shop">Shop</a>
+              <a href="index.html#shop">
+                Shop
+              </a>
             </li>
 
             <li>
-              <a href="index.html#contact">Contact</a>
+              <a href="index.html#contact">
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
@@ -90,16 +290,20 @@
         >
           Book a Session
         </a>
+
       </div>
     </header>
 
     <main>
+
       <!-- =========================
            RECOVERY HERO
       ========================== -->
 
       <section class="recovery-page-hero">
+
         <div class="recovery-page-hero-container">
+
           <div class="recovery-page-photo">
             <img
               src="recovery.jpg"
@@ -108,6 +312,7 @@
           </div>
 
           <div class="recovery-page-introduction">
+
             <p class="section-label">
               PERSONAL STORY
             </p>
@@ -124,26 +329,175 @@
             </p>
 
             <p>
-              Physical recovery can also affect confidence,
-              independence, energy, and emotional well-being.
-              Tasks that were once simple may suddenly require
-              more concentration and effort.
+              My experience with L4-L5 surgery taught me that
+              recovery is not always about pain. Numbness,
+              weakness, mobility, confidence, and learning how
+              to move again can also become an important part
+              of the journey.
             </p>
 
             <blockquote class="recovery-page-quote">
               Progress does not need to be fast to be meaningful.
             </blockquote>
+
           </div>
+
         </div>
+
       </section>
+
+
+      <!-- =========================
+           RECOVERY VIDEO SERIES
+      ========================== -->
+
+      <section class="recovery-video-section">
+
+        <div class="recovery-page-container">
+
+          <div class="recovery-video-heading">
+
+            <p class="section-label">
+              MY RECOVERY JOURNEY
+            </p>
+
+            <h2>
+              L4-L5 Recovery Video Series
+            </h2>
+
+            <p>
+              This video series shares my personal experience
+              with L4-L5 surgery, numbness, weakness, physical
+              therapy, exercise, and the ongoing process of
+              recovery.
+            </p>
+
+          </div>
+
+
+          <div class="recovery-video-grid">
+
+            <!-- =========================
+                 EPISODE 1
+            ========================== -->
+
+            <article class="recovery-video-card">
+
+              <div class="recovery-video-wrapper">
+
+                <iframe
+                  src="https://www.youtube.com/embed/swdvWnGCTLY""
+                  title="L4-L5 Surgery With Almost No Pain - My Numbness and Weakness Recovery Story"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+
+              </div>
+
+
+              <div class="recovery-video-content">
+
+                <p class="recovery-episode">
+                  Episode 1
+                </p>
+
+                <h3>
+                  My L4-L5 Surgery and Recovery Journey
+                </h3>
+
+                <p>
+                  Why did I choose L4-L5 laminectomy and
+                  discectomy surgery when my pain level was
+                  only around 0 to 1 out of 10?
+                </p>
+
+                <p>
+                  In this first episode, I share my personal
+                  experience with numbness and weakness,
+                  surgery, physical therapy, MRI and nerve
+                  testing, and why recovery has been more
+                  complicated than I originally expected.
+                </p>
+
+              </div>
+
+            </article>
+
+
+            <!-- =========================
+                 EPISODE 2
+                 COMING SOON
+            ========================== -->
+
+            <article
+              class="recovery-video-card recovery-coming-soon"
+            >
+
+              <div class="recovery-coming-soon-image">
+
+                <span>
+                  Episode 2
+                  <br />
+                  Coming Soon
+                </span>
+
+              </div>
+
+
+              <div class="recovery-video-content">
+
+                <p class="recovery-episode">
+                  Episode 2
+                </p>
+
+                <h3>
+                  Physical Therapy and What Helped Me
+                </h3>
+
+                <p>
+                  In the next episode, I will share more about
+                  physical therapy, stretching, strengthening,
+                  stiffness, and the exercises that have helped
+                  me personally during recovery.
+                </p>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <div class="recovery-video-note">
+
+            <strong>
+              Please note:
+            </strong>
+
+            I am not a physician or medical professional.
+            These videos share my personal experience only
+            and are not medical advice. If you are experiencing
+            pain, numbness, weakness, or other neurological
+            symptoms, please speak with your physician or
+            another qualified healthcare professional.
+
+          </div>
+
+        </div>
+
+      </section>
+
 
       <!-- =========================
            RECOVERY PROCESS
       ========================== -->
 
       <section class="recovery-page-story-section">
+
         <div class="recovery-page-container">
+
           <div class="recovery-page-heading">
+
             <p class="section-label">
               THE RECOVERY PROCESS
             </p>
@@ -157,10 +511,16 @@
               through small, repeated actions rather than one
               major change.
             </p>
+
           </div>
 
+
           <div class="recovery-page-story-grid">
+
+            <!-- Story 1 -->
+
             <article class="recovery-page-story-card">
+
               <span class="recovery-page-number">
                 01
               </span>
@@ -170,18 +530,23 @@
               </h3>
 
               <p>
-                Pain and limited movement can affect everyday
-                activities, confidence, independence, and
-                motivation.
+                Numbness, weakness, stiffness, and limited
+                movement can affect everyday activities,
+                confidence, independence, and motivation.
               </p>
 
               <p>
-                Accepting those temporary limitations can be one
-                of the most difficult parts of recovery.
+                Accepting those limitations can be one of the
+                most difficult parts of recovery.
               </p>
+
             </article>
 
+
+            <!-- Story 2 -->
+
             <article class="recovery-page-story-card">
+
               <span class="recovery-page-number">
                 02
               </span>
@@ -200,9 +565,14 @@
                 Small actions create a foundation for greater
                 strength and confidence.
               </p>
+
             </article>
 
+
+            <!-- Story 3 -->
+
             <article class="recovery-page-story-card">
+
               <span class="recovery-page-number">
                 03
               </span>
@@ -213,16 +583,22 @@
 
               <p>
                 Some days may feel encouraging, while others may
-                include pain, weakness, frustration, or fatigue.
+                include weakness, numbness, frustration, stiffness,
+                or fatigue.
               </p>
 
               <p>
                 One difficult day does not erase the progress
                 that has already been made.
               </p>
+
             </article>
 
+
+            <!-- Story 4 -->
+
             <article class="recovery-page-story-card">
+
               <span class="recovery-page-number">
                 04
               </span>
@@ -241,18 +617,26 @@
                 The goal is to improve safely from your own
                 starting point.
               </p>
+
             </article>
+
           </div>
+
         </div>
+
       </section>
+
 
       <!-- =========================
            RECOVERY LESSONS
       ========================== -->
 
       <section class="recovery-page-lessons-section">
+
         <div class="recovery-page-container">
+
           <div class="recovery-page-heading">
+
             <p class="section-label">
               WHAT RECOVERY TAUGHT ME
             </p>
@@ -265,10 +649,16 @@
               Recovery is personal. Each person may need a
               different amount of time, support, and guidance.
             </p>
+
           </div>
 
+
           <div class="recovery-page-lessons-grid">
+
+            <!-- Lesson 1 -->
+
             <article class="recovery-page-lesson-card">
+
               <span class="recovery-page-lesson-number">
                 01
               </span>
@@ -278,13 +668,18 @@
               </h3>
 
               <p>
-                Healing has its own timeline. Trying to force
-                progress too quickly can create additional
-                stress or another setback.
+                Healing and nerve recovery can take time.
+                Progress may not always happen as quickly
+                as we expect.
               </p>
+
             </article>
 
+
+            <!-- Lesson 2 -->
+
             <article class="recovery-page-lesson-card">
+
               <span class="recovery-page-lesson-number">
                 02
               </span>
@@ -298,9 +693,14 @@
                 than occasional intense effort. Small habits
                 gradually create meaningful change.
               </p>
+
             </article>
 
+
+            <!-- Lesson 3 -->
+
             <article class="recovery-page-lesson-card">
+
               <span class="recovery-page-lesson-number">
                 03
               </span>
@@ -314,19 +714,28 @@
                 yourself with another person. Your condition,
                 needs, and goals are personal.
               </p>
+
             </article>
+
           </div>
+
         </div>
+
       </section>
+
 
       <!-- =========================
            DAILY RECOVERY
       ========================== -->
 
       <section class="recovery-page-daily-section">
+
         <div class="recovery-page-container">
+
           <div class="recovery-page-daily-layout">
+
             <div class="recovery-page-daily-content">
+
               <p class="section-label">
                 DAILY RECOVERY
               </p>
@@ -336,12 +745,13 @@
               </h2>
 
               <p>
-                Manageable daily routines may help improve
-                movement, confidence, rest, and emotional
-                well-being.
+                Manageable daily routines may help support
+                movement, confidence, strength, flexibility,
+                and overall well-being.
               </p>
 
               <ul class="recovery-page-list">
+
                 <li>
                   Practice gentle movement within your ability.
                 </li>
@@ -365,10 +775,14 @@
                 <li>
                   Allow time for physical and mental rest.
                 </li>
+
               </ul>
+
             </div>
 
+
             <aside class="recovery-page-reminder">
+
               <p class="recovery-page-reminder-label">
                 A GENTLE REMINDER
               </p>
@@ -387,17 +801,24 @@
                 Even when improvement feels slow, your effort
                 still has value.
               </p>
+
             </aside>
+
           </div>
+
         </div>
+
       </section>
+
 
       <!-- =========================
            FINAL MESSAGE
       ========================== -->
 
       <section class="recovery-page-final-section">
+
         <div class="recovery-page-final-content">
+
           <p class="section-label">
             KEEP MOVING FORWARD
           </p>
@@ -407,13 +828,15 @@
           </h2>
 
           <p>
-            Recovery may require time, but it is possible to
-            rebuild movement, confidence, strength, and hope.
-            Begin with what you can do today and continue one
-            step at a time.
+            Recovery may require time. Continue working with
+            what your body can do today while supporting
+            movement, strength, mobility, and overall wellness
+            one step at a time.
           </p>
 
+
           <div class="recovery-page-buttons">
+
             <a
               href="services.html"
               class="button recovery-page-light-button"
@@ -427,19 +850,30 @@
             >
               Contact Us
             </a>
+
           </div>
+
         </div>
+
       </section>
+
     </main>
+
 
     <!-- =========================
          FOOTER
     ========================== -->
 
     <footer class="site-footer">
+
       <div class="footer-container">
+
         <div>
-          <a href="index.html" class="footer-logo">
+
+          <a
+            href="index.html"
+            class="footer-logo"
+          >
             E&amp;K Wellness
           </a>
 
@@ -447,37 +881,55 @@
             Supporting movement, recovery, balance, strength,
             and everyday wellness.
           </p>
+
         </div>
 
+
         <div>
+
           <h2>
             Quick Links
           </h2>
 
           <ul class="footer-links">
+
             <li>
-              <a href="index.html">Home</a>
+              <a href="index.html">
+                Home
+              </a>
             </li>
 
             <li>
-              <a href="index.html#about">About</a>
+              <a href="index.html#about">
+                About
+              </a>
             </li>
 
             <li>
-              <a href="services.html">Services</a>
+              <a href="services.html">
+                Services
+              </a>
             </li>
 
             <li>
-              <a href="recovery.html">Recovery</a>
+              <a href="recovery.html">
+                Recovery
+              </a>
             </li>
 
             <li>
-              <a href="index.html#contact">Contact</a>
+              <a href="index.html#contact">
+                Contact
+              </a>
             </li>
+
           </ul>
+
         </div>
 
+
         <div>
+
           <h2>
             Contact
           </h2>
@@ -491,15 +943,22 @@
           <p>
             Long Beach and surrounding areas
           </p>
+
         </div>
+
       </div>
 
+
       <div class="copyright">
+
         <p>
           &copy; 2026 E&amp;K Wellness.
           All rights reserved.
         </p>
+
       </div>
+
     </footer>
+
   </body>
 </html>
